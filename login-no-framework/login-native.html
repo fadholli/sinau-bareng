@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desain-login-menggunakan-native-html-css-js</title>
+    <link rel="stylesheet" href="./file-css/login-native.css">
+</head>
+<body>
+    <div class="section-wrapping">
+        <div class="background-img">
+            <div class="wrapping-form">
+                <div class="wrapping-logo">
+                    <img src="../../img-latihan/Group 2515.png">
+                </div>
+                <section>
+                    <p id="pop-up"></p>
+                </section>
+                <form>
+                    <div class="wrapping-input">
+                        <label for="input-name">Username</label>
+                        <input class="input-name-password" type="text" value="Masukan NISN">
+                    </div>
+                    <div class="wrapping-input">
+                        <label for="input-pasword">Password</label>
+                            <a id="show" onclick='document.getElementById("show").innerHTML = "show"'>hiden</a>
+                            <!-- <a id="show" href="file:///E:/GIT/sinau-bareng/login-no-framework/login-native.html?">show</a> -->
+                        <input class="input-name-password" type="text" value="Masukan Password">
+                    </div>
+                    <div class="wrapping-check-box">
+                        <div class="">
+                            <input type="checkbox">
+                            <a class="password">Ingat Saya</a>
+                        </div>
+                        <a class="password" href="">Lupa Password?</a>
+                    </div>
+                    <div class="wrapping-button-login">
+                        <button type="button" class="button-login" onclick='document.getElementById("pop-up").innerHTML = "sandi yang anda masukan salah"' >LOGIN</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
