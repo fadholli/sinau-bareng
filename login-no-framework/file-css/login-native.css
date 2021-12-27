@@ -3,11 +3,11 @@
 }
 @font-face {
     font-family: 'form';
-    src: url(../../font/Ubuntu/Ubuntu-Regular.ttf);
+    src: url(../font/Ubuntu/Ubuntu-Regular.ttf);
 }
 @font-face {
     font-family: 'login';
-    src: url(../../font/Ubuntu/Ubuntu-Bold.ttf);
+    src: url(../font/Ubuntu/Ubuntu-Bold.ttf);
 }
 body {
     display: flex;
@@ -25,7 +25,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../../img-latihan/Group.png);
+    background-image: url(../img-latihan/Group.png);
 }
 .wrapping-form {
     width: 432px;
