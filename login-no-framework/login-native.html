@@ -14,19 +14,15 @@
                 <div class="wrapping-logo">
                     <img src="img-latihan/Group 2515.png">
                 </div>
-                <section>
-                    <p id="pop-up"></p>
-                </section>
-                <form>
+                <form id="form">
                     <div class="wrapping-input">
                         <label for="input-name">Username</label>
-                        <input class="input-name-password" type="text" value="Masukan NISN">
+                        <input class="input-name-password" name="username" type="text" value="" placeholder="Masukan NISN">
                     </div>
                     <div class="wrapping-input">
                         <label for="input-pasword">Password</label>
-                            <a id="show" onclick='document.getElementById("show").innerHTML = "show"'>hiden</a>
-                            <!-- <a id="show" href="file:///E:/GIT/sinau-bareng/login-no-framework/login-native.html?">show</a> -->
-                        <input class="input-name-password" type="text" value="Masukan Password">
+                            <a id="show" onclick="toggleShow()">hiden</a>
+                        <input class="input-name-password" name="password" id="password" type="password" value="" placeholder="Masukan Password">
                     </div>
                     <div class="wrapping-check-box">
                         <div class="">
@@ -35,12 +31,16 @@
                         </div>
                         <a class="password" href="">Lupa Password?</a>
                     </div>
+                    <div>
+                        <p id="pop-up"></p>
+                    </div>
                     <div class="wrapping-button-login">
-                        <button type="button" class="button-login" onclick='document.getElementById("pop-up").innerHTML = "sandi yang anda masukan salah"' >LOGIN</button>
+                        <button type="submit" class="button-login">LOGIN</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    <script src="./script/login.js"></script>
 </body>
 </html>
