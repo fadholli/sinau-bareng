@@ -15,12 +15,12 @@ body {
     align-items: center;
 }
 .section-wrapping {
+    min-height: 100vh;
     width: 100%;
-    height: 657px;
     background: linear-gradient(0deg, #3088C8 0.12%, #51C8EC 100%);
 }
 .background-img {
-    width: 100%;
+    min-height: 100vh;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -29,27 +29,34 @@ body {
 }
 .wrapping-form {
     width: 432px;
-    height: 628px;
+    height: 90%;
     background-color: #FFFFFF;
-    border-radius: 20px;
+    border-radius: 10px;
+    padding: 20px 0;
 }
 .wrapping-logo {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 50px 0;
+    padding: 20px 0; {
+    }
 }
 section {
     position: absolute;
     padding:0 0 0 110px;
     margin: -25px 0;
 }
+.pop-up {
+    display: flex;
+    justify-content: center;
+}
 #pop-up {
     font-family: 'form';
     color: red;
 }
 form {
+    padding: 30px 0;
     margin: 0 30px;
 }
 #alert {
@@ -99,10 +106,16 @@ input {
     text-decoration: none;
     color: #828282;
 }
+.checkbox {
+    display: flex;
+    align-items: center;
+}
 .password {
+    align-items: center;
     font-family: 'form';
     font-size: 13px;
     text-decoration: none;
+    margin: 0 6px 0;
 }
 .wrapping-button-login {
     display: flex;
@@ -116,6 +129,52 @@ input {
     font-size: 20px;
     color: #FFFFFF;
     background-color: #C7C7CC;
-    border:solid#C7C7CC;
+    border:none;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    .wrapping-form {
+        width: 80%;
+        height: 490px;
+        padding: 10px 0;
+    }
+    .wrapping-logo {
+        padding: 0;
+    }
+    label {
+        font-size: 12px;
+    }
+    input {
+        font-size: 9px;
+    }
+    #show {
+        font-size: 9px;
+    }
+    .password {
+        font-size: 12px;
+    }
+    .button-login {
+        font-size: 15px;
+    }
+    .input-name-password  {
+        width: 90%;
+        height: 30px;
+        margin: 7px;
+        border-radius: 5px;
+    }
+    .wrapping-input a {
+        top: 38px;
+    }
+    img {
+        width: 125px;
+        padding: 35px 0;
+    }
+    form {
+        margin: 0 10px;
+    }
+    .button-login  {
+        height: 34px;
+        border-radius: 7px;
+    }
 }
